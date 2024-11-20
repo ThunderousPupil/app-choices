@@ -20,6 +20,8 @@
 		DDB6C9532CEC8FB800311B30 /* choicesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6C9522CEC8FB800311B30 /* choicesUITestsLaunchTests.swift */; };
 		DDDFAA782CED9F76001C5094 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE6F8CB2CED9AF200E2B963 /* ListModel.swift */; };
 		DDDFAA7A2CEDBB0A001C5094 /* RandomResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFAA792CEDBB0A001C5094 /* RandomResultView.swift */; };
+		DDDFAA7C2CEDD435001C5094 /* ResultDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFAA7B2CEDD435001C5094 /* ResultDisplayView.swift */; };
+		DDDFAA7E2CEDD4D1001C5094 /* DiceResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFAA7D2CEDD4D1001C5094 /* DiceResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		DDB6C9502CEC8FB800311B30 /* choicesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = choicesUITests.swift; sourceTree = "<group>"; };
 		DDB6C9522CEC8FB800311B30 /* choicesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = choicesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DDDFAA792CEDBB0A001C5094 /* RandomResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomResultView.swift; sourceTree = "<group>"; };
+		DDDFAA7B2CEDD435001C5094 /* ResultDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDisplayView.swift; sourceTree = "<group>"; };
+		DDDFAA7D2CEDD4D1001C5094 /* DiceResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceResultView.swift; sourceTree = "<group>"; };
 		DDE6F8CB2CED9AF200E2B963 /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				DD53FC9E2CECDD0900CB1DBA /* HomeView.swift */,
+				DDDFAA7D2CEDD4D1001C5094 /* DiceResultView.swift */,
+				DDDFAA7B2CEDD435001C5094 /* ResultDisplayView.swift */,
 				DDDFAA792CEDBB0A001C5094 /* RandomResultView.swift */,
 				DD3FD9602CECE67A000A9A85 /* EditListView.swift */,
 				DD3FD95F2CECE67A000A9A85 /* ListsView.swift */,
@@ -311,6 +317,8 @@
 			files = (
 				DD3FD9682CECE67B000A9A85 /* ListItem.swift in Sources */,
 				DD3FD9692CECE67B000A9A85 /* ListsViewModel.swift in Sources */,
+				DDDFAA7E2CEDD4D1001C5094 /* DiceResultView.swift in Sources */,
+				DDDFAA7C2CEDD435001C5094 /* ResultDisplayView.swift in Sources */,
 				DD3FD9652CECE67B000A9A85 /* ListsView.swift in Sources */,
 				DD3FD9662CECE67B000A9A85 /* EditListView.swift in Sources */,
 				DDDFAA7A2CEDBB0A001C5094 /* RandomResultView.swift in Sources */,

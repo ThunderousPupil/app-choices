@@ -32,6 +32,7 @@ struct HomeView: View {
     @State private var showSavedLists = false
     @StateObject private var viewModel = ListsViewModel()
     @State private var showingCreateSheet = false  // 控制 sheet 显示
+    @State private var showDiceResult = false  // 添加这行
     let backgroundColor = Color(red: 0.4, green: 0.6, blue: 0.8)
     
     var body: some View {
@@ -43,24 +44,6 @@ struct HomeView: View {
             GeometryReader { geometry in
                 VStack(spacing: 0) {
                     Spacer(minLength: geometry.size.height * 0.15)
-                    
-//                    // 三个主要按钮
-//                    CustomButton(title: "新建清单", backgroundColor: backgroundColor){
-//                        showingCreateSheet = true
-//                    }
-//                        .frame(height: geometry.size.height * 0.2)
-//                        .sheet(isPresented: $showingCreateSheet) {
-//                            // 使用 EditListView 替换 CreateListView
-//                            EditListView(
-//                                list: ListModel(name: ""), // 创建一个空的清单
-//                                onUpdate: { updatedList in
-//                                    viewModel.addList(name: updatedList.name)  // 添加新清单
-//                                }
-//                            )
-//
-//                        }
-//                    Spacer()
-//
                     CustomButton(title: "清单", backgroundColor: backgroundColor) {
                         showSavedLists = true
                     }
@@ -71,9 +54,12 @@ struct HomeView: View {
                     Spacer()
                     
                     CustomButton(title: "🎲", backgroundColor: backgroundColor) {
-                        print("点击了骰子")
+                        showDiceResult = true
                     }
-                        .frame(height: geometry.size.height * 0.2)
+                    .frame(height: geometry.size.height * 0.2)
+                    .fullScreenCover(isPresented: $showDiceResult) {
+                        DiceResultView()
+                    }
                     
                     Spacer(minLength: geometry.size.height * 0.15)
                 }

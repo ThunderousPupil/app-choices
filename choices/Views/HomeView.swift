@@ -44,22 +44,24 @@ struct HomeView: View {
                 VStack(spacing: 0) {
                     Spacer(minLength: geometry.size.height * 0.15)
                     
-                    // 三个主要按钮
-                    CustomButton(title: "新建清单", backgroundColor: backgroundColor){
-                        showingCreateSheet = true
-                    }
-                        .frame(height: geometry.size.height * 0.2)
-                        .sheet(isPresented: $showingCreateSheet) {
-                            // 使用 EditListView 替换 CreateListView
-                            EditListView(
-                                list: ListModel(name: ""), // 创建一个空的清单
-                                onUpdate: { updatedList in
-                                    viewModel.addList(name: updatedList.name)  // 添加新清单
-                                }
-                            )                        }
-                    Spacer()
-                    
-                    CustomButton(title: "已有清单", backgroundColor: backgroundColor) {
+//                    // 三个主要按钮
+//                    CustomButton(title: "新建清单", backgroundColor: backgroundColor){
+//                        showingCreateSheet = true
+//                    }
+//                        .frame(height: geometry.size.height * 0.2)
+//                        .sheet(isPresented: $showingCreateSheet) {
+//                            // 使用 EditListView 替换 CreateListView
+//                            EditListView(
+//                                list: ListModel(name: ""), // 创建一个空的清单
+//                                onUpdate: { updatedList in
+//                                    viewModel.addList(name: updatedList.name)  // 添加新清单
+//                                }
+//                            )
+//
+//                        }
+//                    Spacer()
+//
+                    CustomButton(title: "清单", backgroundColor: backgroundColor) {
                         showSavedLists = true
                     }
                         .frame(height: geometry.size.height * 0.2)
@@ -88,7 +90,7 @@ struct CustomButton: View {
     var body: some View {
         Button(action: action) {
             Text(title)
-                .font(.system(size:40, weight: .bold)) // 增大字体
+                .font(.system(size:60, weight: .bold)) // 增大字体
                 .foregroundColor(.white)
                 .frame(maxWidth: .infinity)
                 .frame(maxHeight: .infinity)

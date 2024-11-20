@@ -4,7 +4,9 @@ import Combine
 
 class ListsViewModel: ObservableObject {
     @Published var lists: [ListModel] = []
-
+    @Published var selectedItem: ListItem?
+    @Published var showingRandomResult = false
+    
     init() {
         // 添加一些测试数据
         lists = [
@@ -37,5 +39,13 @@ class ListsViewModel: ObservableObject {
         if let index = lists.firstIndex(where: { $0.id == list.id }) {
             lists[index] = list
         }
+    }
+    
+    func selectRandomItem(from list: ListModel) {
+        guard !list.items.isEmpty else { return }
+        var generator = SystemRandomNumberGenerator()
+        let randomIndex = Int.random(in: 0..<list.items.count, using: &generator)
+        selectedItem = list.items[randomIndex]
+        showingRandomResult = true
     }
 }

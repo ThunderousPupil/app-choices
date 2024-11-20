@@ -19,6 +19,7 @@
 		DDB6C9512CEC8FB800311B30 /* choicesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6C9502CEC8FB800311B30 /* choicesUITests.swift */; };
 		DDB6C9532CEC8FB800311B30 /* choicesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6C9522CEC8FB800311B30 /* choicesUITestsLaunchTests.swift */; };
 		DDDFAA782CED9F76001C5094 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE6F8CB2CED9AF200E2B963 /* ListModel.swift */; };
+		DDDFAA7A2CEDBB0A001C5094 /* RandomResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFAA792CEDBB0A001C5094 /* RandomResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		DDB6C94C2CEC8FB800311B30 /* choicesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = choicesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB6C9502CEC8FB800311B30 /* choicesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = choicesUITests.swift; sourceTree = "<group>"; };
 		DDB6C9522CEC8FB800311B30 /* choicesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = choicesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DDDFAA792CEDBB0A001C5094 /* RandomResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomResultView.swift; sourceTree = "<group>"; };
 		DDE6F8CB2CED9AF200E2B963 /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				DD53FC9E2CECDD0900CB1DBA /* HomeView.swift */,
+				DDDFAA792CEDBB0A001C5094 /* RandomResultView.swift */,
 				DD3FD9602CECE67A000A9A85 /* EditListView.swift */,
 				DD3FD95F2CECE67A000A9A85 /* ListsView.swift */,
 			);
@@ -310,6 +313,7 @@
 				DD3FD9692CECE67B000A9A85 /* ListsViewModel.swift in Sources */,
 				DD3FD9652CECE67B000A9A85 /* ListsView.swift in Sources */,
 				DD3FD9662CECE67B000A9A85 /* EditListView.swift in Sources */,
+				DDDFAA7A2CEDBB0A001C5094 /* RandomResultView.swift in Sources */,
 				DDDFAA782CED9F76001C5094 /* ListModel.swift in Sources */,
 				DDB6C9302CEC8FB400311B30 /* choicesApp.swift in Sources */,
 				DD53FC9F2CECDD0900CB1DBA /* HomeView.swift in Sources */,
